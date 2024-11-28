@@ -1,0 +1,51 @@
+*{
+    margin: 0
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    position: relative;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 500px;
+    width: 500px;
+}
+
+.square{
+    height: 15px;
+    width: 15px;
+    margin: 3px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: #1d1d1d;
+}
+
+.tool-box{
+    position: absolute;
+    top: 15px;
+    right: 40px;
+
+    display: flex;
+    gap: 20px;
+}
+.eraser, .pen{
+    color: white;
+}
+
+.pen:hover{
+    transform: scaleY(1.2);
+    color: rgb(210, 202, 202);
+}
+
+.eraser:hover{
+    transform: scaleY(1.2);
+    color: rgb(210, 202, 202);
+}
